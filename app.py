@@ -256,3 +256,5 @@ if choice == 'Batch Prediction':
             st.info('Click the button to predict the probability of churning of clients!')
     else:
         st.write('---')
+
+st.write('Made with ❤️ by [Sidnei Almeida](https://www.linkedin.com/in/saaelmeida93/)')
