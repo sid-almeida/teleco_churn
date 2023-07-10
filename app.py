@@ -211,11 +211,11 @@ if choice == "Prediction":
                                      paperless_billing, payment_method]])
         if prediction == 0:
             st.write('The chances of the client to churn **are small**')
-            st.write(f'Probability of the client to churn is of **{prob[0][0] * 100} %**')
+            st.write(f'Probability of the client to keep consuming the service is of **{prob[0][0] * 100} %**')
 
         elif prediction == 1:
             st.write('The customer has a **high chance** of churning')
-            st.write(f'Probability of the client to continue to consume the service is of **{prob[0][1] * 100} %**')
+            st.write(f'Probability of the client to abandon the service is of **{prob[0][1] * 100} %**')
 
 if choice == 'Batch Prediction':
     st.title('Batch Prediction')
