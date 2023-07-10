@@ -4,7 +4,7 @@ import os
 import pickle as pkl
 
 # load the data
-data = pd.read_csv('data_numerical.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/sid-almeida/teleco_churn/main/data_numerical.csv')
 
 # train model
 X_train = data.drop(['churn'], axis=1)
@@ -15,7 +15,7 @@ gbclassifier = GradientBoostingClassifier()
 model = gbclassifier.fit(X_train, y_train)
 
 with st.sidebar:
-    st.image("https://github.com/sid-almeida/cement_demand/blob/main/Brainize%20Tech.png?raw=true", width=250)
+    st.image("https://github.com/sid-almeida/teleco_churn/blob/main/Brainize%20Tech(1).png?raw=true", width=250)
     st.title("TeleCom Churn Prediction")
     choice = st.radio("**Navigation:**", ("About", "Prediction", "Batch Prediction"))
     st.info('**Note:** Please be aware that this application is intended solely for educational purposes. It is strongly advised against utilizing this tool for making any financial decisions.')
